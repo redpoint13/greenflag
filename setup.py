@@ -12,13 +12,13 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
-    version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    name='greenflag',
+    version='0.0.1',
+    description='Green Flags',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Tony Shouse',
+    author_email='redpoint13@gmail.com  ',
+    url='https://github.com/redpoint13/greenflag.git',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
