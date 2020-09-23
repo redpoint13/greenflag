@@ -1,2 +1,7 @@
-nose
-sphinx
+pandas
+pandas_datareader
+flask
+flask_restful
+zipline
+alphalens
+pyfolio
