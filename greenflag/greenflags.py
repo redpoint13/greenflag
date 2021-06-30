@@ -35,7 +35,6 @@ def handle_data(context, data):
 '''
 
 
-
 def moving_average(group, n=9):
     sma = pd.rolling_mean(group, n)
     return sma
@@ -47,9 +46,9 @@ def moving_average_convergence(group, nslow=26, nfast=12):
     result = pd.DataFrame({'MACD': emafast-emaslow, 'emaSlw': emaslow, 'emaFst': emafast})
     return result
 
-start = datetime(2016, 9, 1)
+start = datetime(2017, 3, 31)
 
-end = datetime(2018, 9, 1)
+end = datetime(2021, 3, 31)
 
 # f = web.DataReader('ticker=RGDPUS', 'econdb')
 # gs10 = pdr.get_data_fred('GS10')
@@ -61,5 +60,5 @@ symbol = 'AAPL.US'  # or 'AAPL.US'
 sphd = web.DataReader("F", 'yahoo', start, end)
 print(sphd)
 
-df_[['emaSlw', 'emaFst', 'MACD']] = sphd.groupby(level=1).Adj_Close.apply(moving_average_convergence)
+sphd[['emaSlw', 'emaFst', 'MACD']] = sphd.groupby(level=1).Adj_Close.apply(moving_average_convergence)
 
