@@ -91,3 +91,4 @@ ENV/
 .vscode/settings.json
 *.csv
 Miniconda3-latest-Linux-x86_64.sh
+greenflag/.vscode/settings.json
