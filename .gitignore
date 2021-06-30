@@ -90,3 +90,4 @@ ENV/
 .ropeproject
 .vscode/settings.json
 *.csv
+Miniconda3-latest-Linux-x86_64.sh
